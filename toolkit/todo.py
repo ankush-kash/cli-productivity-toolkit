@@ -36,7 +36,7 @@ def list_tasks():
     if not tasks :
         print("No tasks Found !!")
     
-    for index,task in enumerate(tasks):
+    for index,task in enumerate(tasks,start=1):
 
         status = "✓" if task["done"] else "✗"
 
